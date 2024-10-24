@@ -1,4 +1,3 @@
-<!-- pecas.php -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -14,10 +13,9 @@
         <a href="index.php">Página Inicial</a>
     </nav>
     <div class="container">
-        <!-- Incluir Peça -->
         <h2>Incluir Peça</h2>
         <?php
-        require 'conexao.php';
+            require 'conexao.php';
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['incluir'])) {
             $numero = $_POST['numero'];
